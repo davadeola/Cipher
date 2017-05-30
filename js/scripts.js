@@ -32,6 +32,23 @@ function last(){
   var txt = string.charAt(index);
   var newy = txt + final;
   alert(newy);
+  var ty = newy.split("").reverse().join("");
+  alert(ty);
+
+  return ty;
+
 }
 
-last();
+var bmw = last();
+
+$(document).ready(function(){
+  $("#right").click(function(){
+    alert(string);
+  });
+
+
+  $("#left").click(function(){
+    alert(bmw);
+  });
+
+});
